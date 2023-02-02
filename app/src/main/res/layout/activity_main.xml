@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,7 +13,6 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
-        <!--Edit text to enter course name-->
         <EditText
             android:id="@+id/idMenu"
             android:layout_width="match_parent"
@@ -22,7 +20,6 @@
             android:layout_margin="10dp"
             android:hint="Menu Namen" />
 
-        <!--edit text to enter course duration-->
         <EditText
             android:id="@+id/idInhalt"
             android:layout_width="match_parent"
@@ -30,7 +27,6 @@
             android:layout_margin="10dp"
             android:hint="Menu Inhalt" />
 
-        <!--edit text to display course tracks-->
         <EditText
             android:id="@+id/idPrice"
             android:layout_width="match_parent"
@@ -39,20 +35,27 @@
             android:hint="Preis" />
 
         <Button
-            android:id="@+id/idBtnAddPicture"
+            android:id="@+id/camera_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="Add Bild"
             android:textAllCaps="false" />
 
-        <!--button for adding new course-->
         <Button
             android:id="@+id/idBtnAddMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="Add Menu"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/idBtnReadMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Read All Menus"
             android:textAllCaps="false" />
 
     </LinearLayout>
